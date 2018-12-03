@@ -1,0 +1,4 @@
+当前行替换：
+:s/.\//\/data\/kenanhai\/NIR\/NIR_negative\/20181015\/imgs_1015\/rotated\/data\/01\//g
+全局替换：
+:%s/.\//\/data\/kenanhai\/NIR\/NIR_negative\/20181015\/imgs_1015\/rotated\/data\/01\//g
