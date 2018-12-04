@@ -2,9 +2,9 @@
 
 import os
 import shutil
-path = '/data/kenanhai/NIR/NIR_negative/20181015/imgs_1015/rotated/labeled/789'
-new_jpg_path = '/data/kenanhai/NIR/NIR_negative/20181015/imgs_1015/rotated/labeled/paper/jpg'
-new_xml_path = '/data/kenanhai/NIR/NIR_negative/20181015/imgs_1015/rotated/labeled/paper/xml'
+path = '/data/user/NIR/NIR_negative/20181015/imgs_1015/rotated/labeled/789'
+new_jpg_path = '/data/user/NIR/NIR_negative/20181015/imgs_1015/rotated/labeled/paper/jpg'
+new_xml_path = '/data/user/NIR/NIR_negative/20181015/imgs_1015/rotated/labeled/paper/xml'
 items = os.listdir(path)
 newlist = []
 count = 1462
