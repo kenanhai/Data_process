@@ -14,21 +14,21 @@ import os.path
 from xml.etree.ElementTree import parse, Element
 
 def test():
-    path="/home/kenanhai/programs/work/darknet/mytrain/Annotations/"
+    path="/home/user/programs/work/darknet/mytrain/Annotations/"
     files=os.listdir(path) #得到文件夹下所有文件名称 
     s=[]
     for xmlFile in files: #遍历文件夹 
         if not os.path.isdir(xmlFile): #判断是否是文件夹,不是文件夹才打开 
             print (xmlFile)
             pass
-        path="/home/kenanhai/programs/work/darknet/mytrain/Annotations/"
+        path="/home/user/programs/work/darknet/mytrain/Annotations/"
         newStr=os.path.join(path,xmlFile)
         dom=parse(newStr)  ###最核心的部分,路径拼接,输入的是具体路径 
         root=dom.getroot()
         #print root
         part=xmlFile[:-4]
         part1=part+'.jpg'
-        newStr1='/home/kenanhai/programs/work/darknet/mytrain/JPEGImages/'+part1
+        newStr1='/home/user/programs/work/darknet/mytrain/JPEGImages/'+part1
 
         #root.remove(root.find('path'))
 
