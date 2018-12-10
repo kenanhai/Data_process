@@ -5,7 +5,7 @@ from xml.etree.ElementTree import parse, Element
 import cv2
 
 def test():
-    path="/home/kenanhai/programs/work/darknet/mytrain/Annotations/"
+    path="/home/user/programs/work/darknet/mytrain/Annotations/"
     files=os.listdir(path) #得到文件夹下所有文件名称 
     s=[]
     for xmlFile in files: #遍历文件夹 
@@ -19,7 +19,7 @@ def test():
         #print root
         part=xmlFile[:-4]
         part1=part+'.jpg'
-        newStr1='/home/kenanhai/programs/work/darknet/mytrain/JPEGImages/'+part1
+        newStr1='/home/user/programs/work/darknet/mytrain/JPEGImages/'+part1
         img = cv2.imread(newStr1)
         new_name = './crop/'+part1
         #root.remove(root.find('path'))
